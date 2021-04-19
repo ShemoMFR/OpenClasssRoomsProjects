@@ -9,8 +9,8 @@
     </head>
     <body>
         <header>
-            <a href="#"><img src="./images/logo/Reservia.svg" id="logo" alt="logo-reservia"/></a>
             <nav id="nav-bar">
+                <a href="#"><img src="./images/logo/Reservia.svg" id="logo" alt="logo-reservia"/></a>
                 <ul>
                   <li><a class="NB" href="#"> Hébergements </a></li>
                   <li><a class="NB" href="#"> Activités </a></li>
@@ -22,11 +22,13 @@
         <h1 id='main-text'> Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
-        <div id="search-bar"> 
-            <img src="./images/logo/marker.svg"  id="logo-marker" alt="logo-marker"/>
-            <p id="ville"> Marseille, France</p>
-            <p id="rechercher"> Rechercher</p>
-        </div>
+        <form id="search-bar" method="POST"> 
+            <div id='logo-container'>
+                <img src="./images/logo/marker.svg"  id="logo-marker" alt="logo-marker"/>
+            </div>
+            <input id="ville" type="text" name="ville"/>
+            <button type="submit" id="rechercher"> Rechercher</button>
+        </form>
 
         <div id="filtres">
             <p id="filtre">Filtre</p>
