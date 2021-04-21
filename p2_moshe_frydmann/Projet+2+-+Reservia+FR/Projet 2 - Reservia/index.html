@@ -17,52 +17,65 @@
                 <nav id="nav-bar">
                     <ul>
                         <li><a class="NB" href="#"> Hébergements </a></li>
-                        <li><a class="NB" href="#"> Activités </a></li>
-                        <li><a class="NB" href="#"> S'inscrire </a></li>
+                        <li id="activite"><a class="NB" href="#"> Activités </a></li>
+                        <li><a class="NB" href="#"> <strong> S'inscrire </strong></a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <h1 id='main-text'> Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+        <p id="subtitle">En plein centre ville ou en pleine nature</p>
 
         <form id="search-bar" method="POST"> 
             <div id='logo-container'>
                 <img src="./images/logo/marker.svg"  id="logo-marker" alt="logo-marker"/>
             </div>
             <input id="ville" type="text" name="ville"/>
-            <button type="submit" id="rechercher"> Rechercher</button>
+            <button type="submit" id="rechercher"> <strong>Rechercher</strong></button>
         </form>
 
         <div id="filtres">
-            <div id="filtre">Filtre</div>
+            <div id="filtre"><strong> Filtres</strong></div>
             <div id="filtre-eco"> Économique</div>
             <div id="filtre-fam"> Familial</div>
             <div id="filtre-roman"> Romantique</div>
             <div id="filtre-animaux"> Animaux autorisés</div>
         </div>
 
-        <section id="hebergements-marseille">
+        <section id="heberg-marseille">
             <h2> Hébergements à Marseille</h2>
-            <div class="etiquette"> 
+            <div id="sec_part1">
+                <div class="etiquette"> 
+                    <img class='img-etiq' src="./images/litsuper.jpg" alt="lit-superpose" />
+                    <div class="txt-etiq"><strong>Auberge à la cannebière</strong></div>
+                    <div class="sub-etiq">Nuit à partir de <strong>25€</strong></div>
+                    <div class="etoiles">
+                        <img class='etoile' src="./images/etoile.svg" alt='note-etoile'/>
+                    </div>
+                </div>
+                <div class="etiquette"> 
+                    <img class='img-etiq' src="" alt="lit-superpose" />
+                    <div class="txt-etiq"><strong>Auberge à la cannebière</strong></div>
+                    <div class="sub-etiq"></div>
+                
+                </div>
+                <div class="etiquette"> 
+                
+                </div>
+            </div>
+            <div id="sec_part2">
+                <div class="etiquette"> 
 
-            </div>
-            <div class="etiquette"> 
+                </div>
+                <div class="etiquette"> 
                 
-            </div>
-            <div class="etiquette"> 
+                </div>
+                <div class="etiquette"> 
                 
+                </div>
             </div>
-            <div class="etiquette"> 
-                
-            </div>
-            <div class="etiquette"> 
-                
-            </div>
-            <div class="etiquette"> 
-                
-            </div>
+
             <p><strong>Afficher plus</strong></p>
         </section>
     </body>
