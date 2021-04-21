@@ -167,10 +167,10 @@ header {
 }
 .etiquette {
     width: 250px;
-    height: 200px;
+    height: 195px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 4px 4px 8px 0px #979797;
+    box-shadow: 4px 4px 8px 0px #bebebe;
 }
 
 h2, p {
@@ -202,6 +202,13 @@ h2, p {
 }
 
 .etoile {
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
+    margin-right: -3px;
+
+}
+
+.etoiles {
+    margin-left: 15px;
+    margin-top: 5px;
 }
