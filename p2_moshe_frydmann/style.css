@@ -1,37 +1,42 @@
 * {
     box-sizing: border-box; /* Avoid padding problems */
-  }
-  @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 body {
-    width: 1400px;
+    margin: 0; /* évite le comportement par défault body sur chrome & mozilla qui met une marge de 8px */
+    font-family: "Raleway", sans-serif; /*** Ne pas mettre de width sur le body car ca force une taille ***/
+}
+
+#main-container {
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
-    margin-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
 }
 
 #search-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width:450px;
+    width: 450px;
     height: 50px;
     text-align: center;
 }
 
 #main-text {
     margin-top: 30px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1.3em;
+    line-height: 1.4;
 }
 
 #subtitle {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1em;
     margin-top: -5px;
     margin-bottom: 15px;
-
 }
 
 #rechercher {
@@ -39,37 +44,33 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #0065FC;
-    font-family: 'Raleway', sans-serif;
+    background-color: #0065fc;
+    font-family: "Raleway", sans-serif;
     font-size: 1em;
-    border: 1px solid #0065FC;
+    border: 1px solid #0065fc;
     color: white;
     border-radius: 0 10px 10px 0;
     height: 50px;
     width: 130px;
 }
 
-#logo-marker
-{
+#logo-marker {
     position: absolute;
     top: 29%;
     left: 32%;
     width: 17px;
     height: 17px;
-    
 }
 
-#logo-container
-{
+#logo-container {
     position: relative;
     width: 50px;
     height: 50px;
     padding-left: 20px;
     background-color: rgb(211, 211, 211);
     border: 1px solid rgb(211, 211, 211);
-    border-radius: 30% 0% 0% 30% ;
+    border-radius: 30% 0% 0% 30%;
 }
-
 
 #ville {
     display: flex;
@@ -88,7 +89,7 @@ body {
 }
 
 #hebergement {
-    color: #0065FC;
+    color: #0065fc;
 }
 
 header {
@@ -99,13 +100,13 @@ header {
 
 #nav-bar ul li {
     list-style: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     margin-left: 60px;
 }
 
 #nav-bar ul a {
     text-decoration: none;
-    color: #0065FC;
+    color: #0065fc;
 }
 
 #activite {
@@ -122,7 +123,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1em;
     font-weight: bold;
     margin-right: 20px;
@@ -131,7 +132,6 @@ header {
     height: 40px;
     border: 2px solid darkgrey;
     border-radius: 20px;
-
 }
 
 #filtre-animaux {
@@ -140,7 +140,7 @@ header {
 
 #filtre {
     display: flex;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 1em;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +154,7 @@ header {
     justify-content: space-between;
     width: 900px;
     height: 630px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     border-radius: 20px;
 }
 
@@ -173,9 +173,10 @@ header {
     box-shadow: 4px 4px 8px 0px #bebebe;
 }
 
-h2, p {
+h2,
+p {
     margin-left: 40px;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .img-etiq {
@@ -188,14 +189,14 @@ h2, p {
 }
 
 .txt-etiq {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     margin-left: 15px;
     margin-top: 7px;
 }
 
 .sub-etiq {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 14px;
     margin-left: 15px;
     margin-top: 5px;
@@ -205,10 +206,16 @@ h2, p {
     width: 13px;
     height: 13px;
     margin-right: -3px;
-
 }
 
 .etoiles {
     margin-left: 15px;
     margin-top: 5px;
+}
+
+footer {
+    height: 200px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+
 }
