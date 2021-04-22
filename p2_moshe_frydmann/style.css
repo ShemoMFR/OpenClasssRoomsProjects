@@ -162,7 +162,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     width: 900px;
-    height: 630px;
+    height: 640px;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
@@ -171,7 +171,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 630px;
+    height: 640px;
     width: 420px;
     margin-left: 40px;
     background-color: #f2f2f2;
@@ -190,22 +190,23 @@ header {
     height: 195px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 4px 4px 8px 0px #bebebe;
+    box-shadow: 0 0 8px 0px #bebebe;
 }
 
 #etiquettes-pop {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5px;
 }
 .etiquette-pop {
     display: flex;
     width: 340px;
     height: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 4px 4px 8px 0px #bebebe;
+    box-shadow: 0 0 8px 0px #bebebe;
 }
 
 .text-etiquettes-populaires {
@@ -215,7 +216,6 @@ header {
 
 h2 {
     margin-top: 45px;
-    margin-bottom: -5px;
     margin-left: 40px;
     font-size: 1.1rem;
     font-family: "Raleway", sans-serif;
@@ -288,5 +288,25 @@ footer {
     height: 200px;
     margin-top: 40px;
     background-color: #f2f2f2;
+}
 
+.long-card {
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0px #bebebe;
+}
+
+.img-long-card {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px 20px 0 0;
+}
+
+.txt-long-card {
+    height: 50px;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-top: 10px;
 }
