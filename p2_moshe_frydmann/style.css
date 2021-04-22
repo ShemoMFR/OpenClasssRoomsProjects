@@ -6,13 +6,16 @@
 body {
     margin: 0; /* évite le comportement par défault body sur chrome & mozilla qui met une marge de 8px */
     font-family: "Raleway", sans-serif; /*** Ne pas mettre de width sur le body car ca force une taille ***/
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #main-container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-top: 40px;
 }
 
@@ -36,7 +39,8 @@ body {
     font-family: "Raleway", sans-serif;
     font-size: 1em;
     margin-top: -5px;
-    margin-bottom: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 #rechercher {
@@ -147,13 +151,29 @@ header {
     margin-right: 30px;
 }
 
+#sections-hebergement {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;   
+}
+
 #heberg-marseille {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 900px;
     height: 630px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+#populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 630px;
+    width: 420px;
+    margin-left: 40px;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
@@ -173,10 +193,37 @@ header {
     box-shadow: 4px 4px 8px 0px #bebebe;
 }
 
-h2,
+#etiquettes-pop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.etiquette-pop {
+    display: flex;
+    width: 340px;
+    height: 150px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px 0px #bebebe;
+}
+
+.text-etiquettes-populaires {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 45px;
+    margin-bottom: -5px;
+    margin-left: 40px;
+    font-size: 1.1rem;
+    font-family: "Raleway", sans-serif;
+}
+
 p {
     margin-left: 40px;
-    font-family: "Raleway", sans-serif;
+    padding-bottom: 30px;
 }
 
 .img-etiq {
@@ -188,6 +235,13 @@ p {
     border-radius: 15px 15px 0px 0px;
 }
 
+.img-etiq-pop {
+    width: 130px;
+    height: 140px;
+    margin: 5px;
+    border-radius: 15px 0px 0px 15px;
+}
+
 .txt-etiq {
     font-family: "Raleway", sans-serif;
     font-size: 14px;
@@ -195,8 +249,20 @@ p {
     margin-top: 7px;
 }
 
+.txt-etiq-pop {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
 .sub-etiq {
     font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.sub-etiq-pop {
     font-size: 14px;
     margin-left: 15px;
     margin-top: 5px;
@@ -211,6 +277,11 @@ p {
 .etoiles {
     margin-left: 15px;
     margin-top: 5px;
+}
+
+.etoiles-pop {
+    margin-left: 15px;
+    margin-top: 50px;
 }
 
 footer {
