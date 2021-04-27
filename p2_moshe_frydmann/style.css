@@ -221,6 +221,14 @@ h2 {
     font-family: "Raleway", sans-serif;
 }
 
+#activite-marseille-title {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
 p {
     margin-left: 40px;
     padding-bottom: 30px;
@@ -290,6 +298,11 @@ footer {
     background-color: #f2f2f2;
 }
 
+#activites-marseille {
+    display: flex;
+    justify-content: space-between;
+}
+
 .long-card {
     width: 300px;
     height: 450px;
@@ -298,13 +311,63 @@ footer {
     box-shadow: 0 0 8px 0px #bebebe;
 }
 
+.short-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mid-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 225px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0px #bebebe;
+}
+
+.small-card {
+    width: 300px;
+    height: 195px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 0px #bebebe;
+}
+
+.img-small-card {
+    width: 300px;
+    height: 145px;
+    border-radius: 20px 20px 0 0;
+}
+
 .img-long-card {
     width: 300px;
     height: 400px;
     border-radius: 20px 20px 0 0;
 }
 
+.img-mid-card {
+    width: 300px;
+    height: 175px;
+    border-radius: 20px 20px 0 0;
+}
+
+.txt-mid-card {
+    height: 50px;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
 .txt-long-card {
+    height: 50px;
+    font-size: 0.9rem;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.txt-small-card {
     height: 50px;
     font-size: 0.9rem;
     margin-left: 20px;
