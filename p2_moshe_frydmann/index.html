@@ -16,9 +16,9 @@
                 <div id="menu">
                     <nav id="nav-bar">
                         <ul>
-                            <li><a class="NB" href="#"> Hébergements </a></li>
-                            <li id="activite"><a class="NB" href="#"> Activités </a></li>
-                            <li><a class="NB" href="#"> <strong> S'inscrire </strong></a></li>
+                            <li><a id="NB1" href="#"> Hébergements </a></li>
+                            <li><a id="NB2" href="#"> Activités </a></li>
+                            <li><a id="NB3" href="#"> <strong> S'inscrire </strong></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -38,10 +38,35 @@
 
             <div id="filtres">
                 <div id="filtre"><strong> Filtres</strong></div>
-                <div id="filtre-eco">Économique</div>
-                <div id="filtre-fam">Familial</div>
-                <div id="filtre-roman">Romantique</div>
-                <div id="filtre-animaux">Animaux autorisés</div>
+                <div class='filtre'>
+                    <div class="icon-filtres">
+                        <img id="money-icon" src="./images/money.svg" alt='money-icon'/> 
+                    </div>
+                    <div class="txt-filtre">Économique</div>
+                </div>
+                <div class='filtre'>
+                    <div class="icon-filtres">
+                        <img id="money-icon" src="./images/money.svg" alt='money-icon'/> 
+                    </div>
+                    <div class="txt-filtre">Famille</div>
+                </div>
+                <div class='filtre'>
+                    <div class="icon-filtres">
+                        <img id="money-icon" src="./images/money.svg" alt='money-icon'/> 
+                    </div>
+                    <div class="txt-filtre">Romantique</div>
+                </div>
+                <div class='filtre'>
+                    <div class="icon-filtres">
+                        <img id="money-icon" src="./images/money.svg" alt='money-icon'/> 
+                    </div>
+                    <div class="txt-filtre">Animaux autorisés</div>
+                </div>
+            </div>
+
+            <div id="infos-logement">
+                <img src='./images/info-solid.svg' id='info-icon' alt="info-icon" />
+                <div id="info-log"> Plus de 500 logements sont disponibles dans cette ville</div>
             </div>
 
             <div id="sections-hebergement">
@@ -214,11 +239,26 @@
                 </div>
             </div>
 
-       
-            
         </div>
         <footer>
-            <h2> Test</h2>
+            <div class="column-footer"> 
+                <div class="title-nav-footer"><strong>A propos</strong></div>
+                <div class="nav-footer">Fonctionnement du site</div>
+                <div class="nav-footer">Conditions générales de vente</div>
+                <div class="nav-footer">Données et confidentialité</div>
+            </div>
+
+            <div class="column-footer"> 
+                <div class="title-nav-footer"><strong>Nos hébergements</strong></div>
+                <div class="nav-footer">Charte qualité</div>
+                <div class="nav-footer">Soumettre votre hôtel</div>
+            </div>
+
+            <div class="column-footer"> 
+                <div class="title-nav-footer"><strong>Assistance</strong></div>
+                <div class="nav-footer">Centre d'aide</div>
+                <div class="nav-footer">Nous contacter</div>
+            </div>
         </footer>
             
     </body>

@@ -6,12 +6,12 @@
 body {
     margin: 0; /* évite le comportement par défault body sur chrome & mozilla qui met une marge de 8px */
     font-family: "Raleway", sans-serif; /*** Ne pas mettre de width sur le body car ca force une taille ***/
-    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #main-container {
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 40px;
@@ -110,11 +110,21 @@ header {
 
 #nav-bar ul a {
     text-decoration: none;
-    color: #0065fc;
 }
 
-#activite {
+#NB1, #NB2 {
     color: black;
+    transition: 0.1s linear;
+    padding-top: 53px;
+}
+
+#NB1:hover {
+    color: #0065fc;
+    padding-top: 53px;
+    border-top: 4px solid #0065fc;
+}
+#NB3 {
+    color: #0065fc;
 }
 
 #filtres {
@@ -123,23 +133,54 @@ header {
     margin-top: 20px;
 }
 
-#filtre-eco, #filtre-fam, #filtre-roman, #filtre-animaux {
+.filtre {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Raleway", sans-serif;
     font-size: 1em;
     font-weight: bold;
     margin-right: 20px;
     text-align: center;
-    width: 120px;
     height: 40px;
-    border: 2px solid darkgrey;
+    border: 2px solid rgba(169, 169, 169, 0.5);
     border-radius: 20px;
 }
 
-#filtre-animaux {
-    width: 180px;
+#money-icon {
+    position: absolute;
+    width: 20px;   
+    top: 30%;
+    left: 25%;
+}
+
+.icon-filtres {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: rgba(0, 101, 252, 0.2);
+}
+
+.txt-filtre {
+    text-align: center;
+    margin-right: 15px;
+}
+
+#infos-logement {
+    display: flex;
+    margin-top: 20px;
+}
+
+#info-icon {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 20px;
+    margin-right: 10px;
 }
 
 #filtre {
@@ -372,4 +413,24 @@ footer {
     font-size: 0.9rem;
     margin-left: 20px;
     margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    padding-top: 40px;
+}
+
+.column-footer {
+    width: 350px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.nav-footer, .title-nav-footer {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.title-nav-footer {
+    margin-bottom: 20px;
 }
