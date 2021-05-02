@@ -130,7 +130,7 @@ header {
 #filtres {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .filtre {
@@ -143,9 +143,24 @@ header {
     font-weight: bold;
     margin-right: 20px;
     text-align: center;
-    height: 40px;
+    height: 50px;
     border: 2px solid rgba(169, 169, 169, 0.5);
-    border-radius: 20px;
+    border-radius: 30px;
+    transition: 0.2s linear;
+}
+
+.filtre:hover {
+    background-color: rgba(0, 101, 252, 0.5);
+    color: white;
+}
+
+.filtre:hover .icon-filtres {
+    background-color: rgba(0, 101, 252, 0)
+}
+
+.etiquette:hover, .etiquette-pop:hover, .long-card:hover, .mid-card:hover, .small-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px 8px #bebebe;
 }
 
 #money-icon {
@@ -157,9 +172,9 @@ header {
 
 .icon-filtres {
     position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
     margin-right: 10px;
     background-color: rgba(0, 101, 252, 0.2);
 }
@@ -171,7 +186,9 @@ header {
 
 #infos-logement {
     display: flex;
-    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
 }
 
 #info-icon {
@@ -195,7 +212,7 @@ header {
 #sections-hebergement {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;   
+    margin-top: 30px;   
 }
 
 #heberg-marseille {
@@ -231,7 +248,8 @@ header {
     height: 195px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 8px 0px #bebebe;
+    box-shadow: 0 0 8px 2px #bebebe;
+    transition: 0.1s linear;
 }
 
 #etiquettes-pop {
@@ -247,7 +265,8 @@ header {
     margin-bottom: 26px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 8px 0px #bebebe;
+    box-shadow: 0 0 8px 2px #bebebe;
+    transition: 0.1s linear;
 }
 
 .text-etiquettes-populaires {
@@ -350,6 +369,7 @@ footer {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 8px 0px #bebebe;
+    transition: 0.1s linear;
 }
 
 .short-card {
@@ -366,6 +386,7 @@ footer {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 8px 0px #bebebe;
+    transition: 0.1s linear;
 }
 
 .small-card {
@@ -374,6 +395,7 @@ footer {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 8px 0px #bebebe;
+    transition: 0.1s linear;
 }
 
 .img-small-card {
