@@ -144,7 +144,7 @@ header {
     margin-right: 20px;
     text-align: center;
     height: 50px;
-    border: 2px solid rgba(169, 169, 169, 0.5);
+    border: 1px solid rgba(169, 169, 169, 0.3);
     border-radius: 30px;
     transition: 0.2s linear;
 }
@@ -152,6 +152,7 @@ header {
 .filtre:hover {
     background-color: rgba(0, 101, 252, 0.5);
     color: white;
+    cursor: pointer;
 }
 
 .filtre:hover .icon-filtres {
@@ -161,6 +162,7 @@ header {
 .etiquette:hover, .etiquette-pop:hover, .long-card:hover, .mid-card:hover, .small-card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 18px 8px #bebebe;
+    cursor: pointer;
 }
 
 #money-icon {
@@ -455,4 +457,50 @@ footer {
 
 .title-nav-footer {
     margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #sections-hebergement {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #populaires {
+        margin-left: -40px;
+    }
+
+    #heberg-marseille {
+        background-color: white;
+    }
+
+    #sec_part1, #sec_part2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .etiquette {
+        margin-top: 20px;
+    }
+
+    #activites-marseille {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #activite-marseille-title {
+        margin-top: 800px;
+    }
+
+ 
+
+
+
+
+
 }
