@@ -89,6 +89,7 @@ body {
 
 #nav-bar ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -118,7 +119,7 @@ header {
     padding-top: 53px;
 }
 
-#NB1:hover {
+#NB1:hover, #NB2:hover, #NB3:hover {
     color: #0065fc;
     padding-top: 53px;
     border-top: 4px solid #0065fc;
@@ -129,6 +130,7 @@ header {
 
 #filtres {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-top: 30px;
 }
@@ -168,8 +170,29 @@ header {
 #money-icon {
     position: absolute;
     width: 20px;   
+    top: 32%;
+    left: 28%;
+}
+
+#man-icon {
+    position: absolute;
+    width: 16px;   
     top: 30%;
-    left: 25%;
+    left: 30%;
+}
+
+#heart-icon {
+    position: absolute;
+    width: 20px;   
+    top: 32%;
+    left: 28%;
+}
+
+#dog-icon {
+    position: absolute;
+    width: 22px;   
+    top: 28%;
+    left: 28%;
 }
 
 .icon-filtres {
@@ -242,6 +265,7 @@ header {
     margin-left: 42px;
     margin-right: 42px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -305,6 +329,17 @@ p {
     border-radius: 15px 15px 0px 0px;
 }
 
+#top-section-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+#arrow-icon {
+    width: 25px;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
 .img-etiq-pop {
     width: 130px;
     height: 140px;
@@ -362,6 +397,7 @@ footer {
 
 #activites-marseille {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -464,15 +500,65 @@ a {
     color: black;
 }
 
-@media only screen and (max-width: 1000px) {
+#logo-search-mobile {
+    display: none;
+}
 
+#logo-loupe {
+    display: none;
+    width: 20px;
+}
+
+#filtre-mobile-row {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #main-container {
+        padding: 20px;
+    }
+
+    #ville {
+        width: 280px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    #rechercher {
+        position: absolute;
+        width: 50px;
+        left: 300px;
+        border-radius: 15px;
+    }
+
+    #search-word {
+        display: none;
+    }
+
+    #logo-loupe {
+        display: flex;
+    }
+
+    #txt-eco {
+        margin-left: 20px;
+    }
     #sections-hebergement {
         display: flex;
         flex-direction: column-reverse;
     }
 
     #populaires {
-        margin-left: -40px;
+        margin-left: -20px;
+        width: 100%;
+    }
+
+    #filtre {
+        margin-right: 100px;
+        margin-bottom: 15px;
+    }
+
+    .filtre {
+        border: 1px solid rgba(169, 169, 169, 0.3);
     }
 
     #heberg-marseille {
@@ -497,10 +583,16 @@ a {
         margin-top: 800px;
     }
 
+    footer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .column-footer {
+        margin-bottom: 30px;
+    }
+
  
-
-
-
-
 
 }
