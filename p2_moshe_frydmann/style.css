@@ -56,6 +56,7 @@ body {
     border-radius: 0 10px 10px 0;
     height: 50px;
     width: 130px;
+    cursor: pointer;
 }
 
 #logo-marker {
@@ -548,10 +549,27 @@ a {
     }
 
     #populaires {
-        margin-left: -20px;
+        border-radius: 0;
+        margin: 0;
         width: 100%;
     }
 
+    .etiquette-pop {
+        width: 90%;
+        height: 130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-etiq-pop {
+        width: 110px;
+        height: 120px;
+    }
+   
+    .sub-etiq-pop {
+        font-size: 12px;
+        margin-bottom: -10px;
+    }
     #filtre {
         margin-right: 100px;
         margin-bottom: 15px;
@@ -593,6 +611,23 @@ a {
         margin-bottom: 30px;
     }
 
+    .long-card, .small-card, .mid-card {
+        width: 350px;   
+    }
+
+    .etiquette {
+        width: 350px;
+    }
+
+    #heberg-marseille {
+        width: 100%;
+        margin: 0;
+    }
+
+    .img-etiq {
+        width: 95%;
+       
+    }
  
 
 }
