@@ -331,6 +331,7 @@ p {
     height: 110px;
     border: 4px solid white;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
 }
 
 #top-section-populaires {
@@ -349,6 +350,7 @@ p {
     height: 140px;
     margin: 5px;
     border-radius: 15px 0px 0px 15px;
+    object-fit: cover;
 }
 
 .txt-etiq {
@@ -394,7 +396,7 @@ p {
 }
 
 footer {
-    height: 200px;
+    height: 100%;
     margin-top: 40px;
     background-color: #f2f2f2;
 }
@@ -444,18 +446,21 @@ footer {
     width: 300px;
     height: 145px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .img-long-card {
     width: 300px;
     height: 400px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .img-mid-card {
     width: 300px;
     height: 175px;
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
 }
 
 .txt-mid-card {
@@ -519,6 +524,15 @@ a {
 
 #nav-bar-mobile {
     display: flex;
+}
+
+#main-footer {
+    display: flex;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 1386px) {
@@ -628,7 +642,7 @@ a {
 
     #main-container {
         padding: 0;
-        margin: 0;
+        margin: 0;        
     }
 
     #nav-bar {
@@ -743,6 +757,7 @@ a {
     .filtre {
         border: 1px solid rgba(169, 169, 169, 0.5);
         margin-top: 10px;
+        margin-right: 10px;
     }
 
     #heberg-marseille {
@@ -765,7 +780,7 @@ a {
         margin-top: 850px;
     }
 
-    footer {
+    #main-footer {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -822,7 +837,20 @@ a {
 
     p {
         margin-left: 20px;
+
     }
+
+    #ville {
+        width: 250px;
+    }
+
+    #search-bar {
+        width: 300px;
+    }
+
+    .column-footer {
+        width: 300px;
+    }  
 }
 
 
